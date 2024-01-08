@@ -29,6 +29,7 @@
     "zone.js": "~0.14.2"
   },
   "devDependencies": {
+    "@angular-builders/custom-webpack": "^17.0.0",
     "@angular-devkit/build-angular": "^17.0.9",
     "@angular/cli": "^17.0.9",
     "@angular/compiler-cli": "^17.0.0",
@@ -39,7 +40,14 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.2.2"
+    "typescript": "~5.2.2",
+    "postcss": "^8.4.32",
+    "postcss-hover-media-feature": "^1.0.2",
+    "postcss-loader": "^7.3.4",
+    "postcss-normalize": "^10.0.1",
+    "postcss-scss": "^4.0.9",
+    "sass": "^1.69.5",
+    "sass-loader": "^13.3.3"
   },
   "optionalDependencies": {
     "@angular-eslint/builder": "17.2.0",

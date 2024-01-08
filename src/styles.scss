@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import "normalize.css";
+@import "sanitize.css";
+// @import "fontface.css";
+
+:root {
+  --base-margin: 1.6rem;
+}
+
+button:hover {
+  background: lightblue;
+}
+
+::placeholder {
+  color: gray;
+}
+
+// todo check if cssnano here: https://github.com/angular/angular-cli/issues/1512#issuecomment-254262959
