@@ -12,7 +12,8 @@
     "lint-ts": "tsc --skipLibCheck --incremental --noEmit",
     "lint-es": "eslint --fix --cache ./**/*.{js,jsx,ts,tsx,json} && prettier --write **/*.{js,jsx,ts,tsx,json,html} --log-level warn",
     "lint-styles": "stylelint --fix --cache ./**/*.{css,scss,less} && prettier --write **/*.{css,scss,less} --log-level warn",
-    "lint-md": "markdownlint --fix **/*.md --ignore node_modules"
+    "lint-md": "markdownlint --fix **/*.md --ignore node_modules",
+    "prepare": "husky install && shx rm -rf .git/hooks && shx ln -s ../.husky .git/hooks && git config --unset core.hooksPath"
   },
   "dependencies": {
     "@angular/animations": "^17.0.0",
@@ -55,15 +56,18 @@
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-prettier": "^5.1.2",
     "eslint-plugin-unused-imports": "^3.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
     "markdownlint": "^0.32.1",
     "markdownlint-cli": "^0.38.0",
+    "prettier": "^3.1.1",
+    "prettier-eslint": "^16.2.0",
+    "shx": "^0.3.4",
     "stylelint": "^15.11.0",
     "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-recommended-scss": "^13.1.0",
     "stylelint-no-unsupported-browser-features": "^7.0.0",
     "stylelint-prettier": "^4.1.0",
-    "stylelint-scss": "^5.3.2",
-    "prettier": "^3.1.1",
-    "prettier-eslint": "^16.2.0"
+    "stylelint-scss": "^5.3.2"
   }
 }
