@@ -10,6 +10,7 @@ module.exports = {
   extends: [
     "prettier",
     "eslint:recommended",
+    "plugin:json/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@angular-eslint/recommended",
     "plugin:@angular-eslint/template/process-inline-templates",
