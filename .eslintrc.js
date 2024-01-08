@@ -28,20 +28,20 @@ module.exports = {
     "no-unused-expressions": ["error", { allowShortCircuit: true }],
     "no-plusplus": "off",
     "class-methods-use-this": "off",
-    // "max-len": [
-    //   "warn",
-    //   {
-    //     code: 140,
-    //     tabWidth: 2,
-    //     comments: 1000,
-    //     ignoreComments: true,
-    //     ignoreTrailingComments: true,
-    //     ignoreUrls: true,
-    //     ignoreStrings: true,
-    //     ignoreTemplateLiterals: true,
-    //     ignoreRegExpLiterals: true,
-    //   },
-    // ],
+    "max-len": [
+      "warn",
+      {
+        code: 140,
+        tabWidth: 2,
+        comments: 1000,
+        ignoreComments: true,
+        ignoreTrailingComments: true,
+        ignoreUrls: true,
+        ignoreStrings: true,
+        ignoreTemplateLiterals: true,
+        ignoreRegExpLiterals: true,
+      },
+    ],
   },
   overrides: [
     {
@@ -70,6 +70,7 @@ module.exports = {
       extends: ["plugin:@angular-eslint/template/recommended", "plugin:@angular-eslint/template/accessibility"],
       rules: {
         "prettier/prettier": "off",
+        "max-len": "off",
       },
     },
   ],
