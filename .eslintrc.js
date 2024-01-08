@@ -1,6 +1,11 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
   root: true,
+  env: {
+    es6: true,
+    node: true,
+    browser: true,
+  },
   ignorePatterns: ["projects/**/*"],
   extends: [
     "prettier",
