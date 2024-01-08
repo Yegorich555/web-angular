@@ -1,63 +1,27 @@
-# Web Angular Template
+# WebAngular
 
-## How to run project
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
 
-1. Open project in VSCode (for example)
-2. Run command `npm i` in terminal (console) for installing all required packages (Node.js is required: <https://nodejs.org/en/>)
-3. For building project you can use the following commands:
-   - `npm run build-prod` - building production version (minimized and optimized). The project will be builded into `build` folder. You can change destination in `webpack.common.js (line 19)`
-   - `npm run build-dev` - building development version
-   - `npm run serve` - building development hot-reloaded version with webpack-dev-server
+## Development server
 
-## How to install packages for CI/CD
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-- Before build without lint use `npm ci --ignore-scripts --omit=optional --omit=peer`
-- Before lint with auto-fix use `npm i --ignore-scripts`
+## Code scaffolding
 
-- ### Explanation for package.json
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-    - **devDependencies** - packages for `dev & prod build` (so for prod need dependencies + devDependencies)
-    - **dependencies** - UI (client-side) packages
-    - **optionalDependencies** - packages for `linters` & `development` (webpack-dev-server, ESLint, StyleLint etc.)
+## Build
 
-## Recommended VSCode extensions
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-- CSS Modules: <https://marketplace.visualstudio.com/items?itemName=clinyong.vscode-css-modules>
-- CSS Modules Syntax Highlighter: <https://marketplace.visualstudio.com/items?itemName=andrewleedham.vscode-css-modules>
-- ESlint: <https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint>
-- StyleLint: <https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint>
-- SCSS intellisense: <https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss>
-- Path autocomplete: <https://marketplace.visualstudio.com/items?itemName=ionutvmi.path-autocomplete>
-- Prettier - Code formatter: <https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode>
-- Import Cost: <https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost>
-- Markdownlint: <https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint>
-- EditConfig for VS Code: <https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig>
-- Spell Checker: <https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker>
-- TodoTree: <https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree>
+## Running unit tests
 
-## Features
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-- **Lint**. Integrated the most popular linters: ESlint, StyleLint
-- **BrowserList**. All required browsers are pointed in **.browserslistrc**, so project will be compiled according to required browsers (babel, postcss, styleLint uses this file)
-- **BrowserList. StyleLint**. Integrated [no-unsupported-browser-features](https://www.npmjs.com/package/stylelint-no-unsupported-browser-features), so during the css,scss-coding styleLint will show on-css rule that unsupported (according to .browserslistrc)
-- **MockServer**. For mocking api responses integrated [webpack-mock-server](https://www.npmjs.com/package/webpack-mock-server) that supports JS,TS and hot-replacement:
-- **Styles**. Integrated [CSS-Modules](https://github.com/css-modules/css-modules) and [postcss-autoprefixer](https://www.npmjs.com/package/autoprefixer), [postcss-normalize](https://www.npmjs.com/package/postcss-normalize), [CssMinimizerPlugin](https://www.npmjs.com/package/css-minimizer-webpack-plugin) (uses [css-nano](https://cssnano.co/) for production build)
-- All packages optimized for CI/CD. See [CI/CD section](#how-to-install-packages-for-cicd)
+## Running end-to-end tests
 
-## Recommended npm-packages
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-- [web-ui-pack](https://www.npmjs.com/package/web-ui-pack) - nice package with form-controls, smart-popup, spinner etc. & useful helpers
-- [ytech-js-extensions](https://www.npmjs.com/package/ytech-js-extensions) - very common extensions for Arrays, Dates (that lacks in web-ui-pack)
+## Further help
 
-## TODO
-
-- Add icomoon to fonts
-
-## Troubleshooting
-
-- Impossible to install anything with `npm i`
-  > check if your NodeJS version matches with pointed in **package.json: engines.node** section (use [NVM](https://github.com/coreybutler/nvm-windows/releases) to easy manage NodeJS versions)
-- Impossible to run scripts from package.json
-  > try to change backslashes (npm-cli issue that flows between versions time to time)
-  > from `.\\node_modules\\.bin\\webpack serve --open --config webpack.devServer.js"`
-  > to `./node_modules/.bin/webpack serve --open --config webpack.devServer.js"`
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

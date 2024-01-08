@@ -1,7 +1,7 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
-  // jsconfig.json === tsconfig.json with allowJs: true
+  "compileOnSave": false,
   "compilerOptions": {
-    //intellisense config for VSCode
     "baseUrl": "./",
     "paths": {
       //none-js-ts files is not supported by intellisense. Use 'path-intellisense.mappings' in .vscode/settings.json instead
@@ -10,18 +10,31 @@
       "images/*": ["src/assets/images/*"],
       "fonts/*": ["src/assets/fonts/*"]
     },
-    "jsx": "react-jsx",
-    "allowJs": true,
-    "outDir": "",
-    "noEmit": true, // exclude errors in console because it should be wrapped by webpack
-    "esModuleInterop": true,
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "node",
+    // "allowJs": true, // it doesn't work with `npm test`
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
     "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "declaration": false,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "ES2022",
+    "useDefineForClassFields": false,
+    "lib": ["ES2022", "dom"]
   },
-  "exclude": ["node_modules", "dist", "build", ".vscode"]
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  },
+  "files": ["src/main.ts"]
 }

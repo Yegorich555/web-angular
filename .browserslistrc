@@ -4,6 +4,8 @@
 
 # You can see what browsers were selected by your queries by running:
 #   npx browserslist
+# possible issues: https://stackoverflow.com/questions/75855519/browserslist-not-honored-in-angular-15
+# to check use: npx browserslist
 
 last 10 Chrome versions
 last 3 Safari versions
