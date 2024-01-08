@@ -10,7 +10,7 @@
     "lint-ng": "ng lint --fix",
     "lint": "npm run lint-es && npm run lint-styles && npm run lint-ts && npm run lint-md",
     "lint-ts": "tsc --skipLibCheck --incremental --noEmit",
-    "lint-es": "eslint --fix --cache ./**/*.{js,jsx,ts,tsx,json} && prettier --write **/*.{js,jsx,ts,tsx,json,html} --log-level warn",
+    "lint-es": "eslint --fix --cache ./**/*.{js,jsx,ts,tsx,json} && prettier --write **/*.{js,jsx,ts,tsx,json} --log-level warn",
     "lint-styles": "stylelint --fix --cache ./**/*.{css,scss,less} && prettier --write **/*.{css,scss,less} --log-level warn",
     "lint-md": "markdownlint --fix **/*.md --ignore node_modules",
     "prepare": "husky install && shx rm -rf .git/hooks && shx ln -s ../.husky .git/hooks && git config --unset core.hooksPath"
