@@ -10,7 +10,7 @@
       "images/*": ["src/assets/images/*"],
       "fonts/*": ["src/assets/fonts/*"]
     },
-    "allowJs": true,
+    // "allowJs": true, // it doesn't work with `npm test`
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
