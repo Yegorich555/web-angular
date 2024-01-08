@@ -1,7 +1,7 @@
 {
-  "name": "webpack-must-have",
-  "version": "1.4.0",
-  "description": "Must-have config for Webpack 5",
+  "name": "web-angular",
+  "version": "1.0.0",
+  "description": "Web template for Angular",
   "main": "main.tsx",
   "scripts": {
     "test": "exit 0",
