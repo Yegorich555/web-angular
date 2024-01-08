@@ -2,6 +2,14 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      //none-js-ts files is not supported by intellisense. Use 'path-intellisense.mappings' in .vscode/settings.json instead
+      //this is should be sync with aliases in webpack
+      "@/*": ["src/*"],
+      "images/*": ["src/assets/images/*"],
+      "fonts/*": ["src/assets/fonts/*"]
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -19,15 +27,13 @@
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
-    "lib": [
-      "ES2022",
-      "dom"
-    ]
+    "lib": ["ES2022", "dom"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
-  }
+  },
+  "files": ["src/main.ts"]
 }
