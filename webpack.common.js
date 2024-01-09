@@ -1,5 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable import/no-extraneous-dependencies */
+const WebpackObsoletePlugin = require("webpack-obsolete-plugin");
+
 // const path = require("path");
 // const isDevServer = false;
 
@@ -32,6 +34,7 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new WebpackObsoletePlugin({ isStrict: true }), // provides popup via alert-script if browser unsupported (according to .browserslistrc)
+  ],
 };
-
-// todo add obsolete plugin
