@@ -17,6 +17,7 @@ module.exports = {
   ],
   plugins: ["json", "prettier", "import", "@typescript-eslint", "unused-imports"],
   rules: {
+    "json/*": ["error", { allowComments: true }],
     "@typescript-eslint/no-explicit-any": [
       "error",
       {
