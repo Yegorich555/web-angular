@@ -71,6 +71,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 - [Worst Practices in Angular](https://medium.com/@Hasan.Kakeh/worst-practices-in-angular-aac6e8cc1a69)
 - [10 Common Mistakes in Angular Development](https://blog.bitsrc.io/essential-tips-for-successful-angular-development-f92a9ea1d20f)
 - [60 questions for Angular](https://www.simplilearn.com/tutorials/angular-tutorial/angular-interview-questions)
+- [Explanation ChangeDetectionStrategy](https://blog.simplified.courses/angular-change-detection-onpush-or-not)
 
 ## Troubleshooting
 
