@@ -66,6 +66,12 @@ Run `ng generate component component-name` to generate a new component. You can 
 - Spell Checker: <https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker>
 - TodoTree: <https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree>
 
+## Knowledge
+
+- [Worst Practices in Angular](https://medium.com/@Hasan.Kakeh/worst-practices-in-angular-aac6e8cc1a69)
+- [10 Common Mistakes in Angular Development](https://blog.bitsrc.io/essential-tips-for-successful-angular-development-f92a9ea1d20f)
+- [60 questions for Angular](https://www.simplilearn.com/tutorials/angular-tutorial/angular-interview-questions)
+
 ## Troubleshooting
 
 - Impossible to install anything with `npm i`
