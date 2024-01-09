@@ -6,13 +6,3 @@
 :root {
   --base-margin: 1.6rem;
 }
-
-button:hover {
-  background: lightblue;
-}
-
-::placeholder {
-  color: gray;
-}
-
-// todo check if cssnano here: https://github.com/angular/angular-cli/issues/1512#issuecomment-254262959
