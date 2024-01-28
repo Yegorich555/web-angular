@@ -36,5 +36,5 @@
     "strictInputAccessModifiers": true,
     "strictTemplates": true
   },
-  "files": ["src/main.ts"]
+  "exclude": ["node_modules", "dist", "build", ".vscode"]
 }
